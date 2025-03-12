@@ -66,3 +66,6 @@ pytest -n auto tests/test/vwoLoginTests/test_*
 
 pip install allure-pytest selenium pytest selenium-page-factory pytest-html openpyxl pyyaml faker openpyxl pytest-xdist python-dotenv
 ```
+### To Freeze Requirements
+
+```pip freeze > requirements.txt```

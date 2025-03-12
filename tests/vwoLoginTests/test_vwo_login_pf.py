@@ -18,7 +18,7 @@ class TestVWOLogin:
     @pytest.mark.usefixtures("setup")#usefixtures->will always try to find the function name in conftest(setup)
     @pytest.mark.qa
     def test_vwologin_negative(self,setup):
-        try:
+        try:  #TODO - 2.Exception Concept
             driver=setup#this will get driver from setup
             driver.get(constants.app_url())
             loginPage= LoginPage(driver)

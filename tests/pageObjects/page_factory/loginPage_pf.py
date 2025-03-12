@@ -11,9 +11,10 @@
 from seleniumpagefactory.Pagefactory import PageFactory
 from tests.utils.common_utils import webdriver_wait
 
-class LoginPage(PageFactory):
+# TODO-5.Class and Object
+class LoginPage(PageFactory): # TODO-4.Encapsulation(private class and locators become private)
     #1.first we do web driver initialization by using constructor
-    def __init__(self,driver):
+    def __init__(self,driver): # TODO-6.Constructor
         self.driver=driver
         self.highlight=True
 
