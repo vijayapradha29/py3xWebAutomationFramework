@@ -37,11 +37,11 @@ class TestVWOLogin:
     def test_vwologin_positive(self, setup):
         driver = setup  # this will get driver from setup
         driver.get(constants.app_url())
-        loginPage = LoginPage(driver)
-        loginPage.login_to_vwo(user=self.username, pwd=self.password)
+        login_Page = LoginPage(driver)
+        login_Page.login_to_vwo(user=self.username, pwd=self.password)
         # time.sleep(5)
-        dashboardPage=DashboardPage(driver)
-        username=dashboardPage.user_logged_in_text()
+        dashboard_Page=DashboardPage(driver)
+        username=dashboard_Page.user_logged_in_text()
         assert "Dashboard" in driver.title
         assert username=="Web Automation"
         time.sleep(5)
