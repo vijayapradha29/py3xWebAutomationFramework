@@ -13,3 +13,5 @@ def webdriver_wait(driver,element_tuple,timeout):
         EC.visibility_of_element_located(element_tuple)
     )
 
+
+
