@@ -16,7 +16,7 @@ from tests.constants.constants import constants
 @allure.feature("Login Test")
 class TestVWOLogin:
     @pytest.mark.usefixtures("setup")#usefixtures->will always try to find the function name in conftest(setup)
-    @pytest.mark.qa
+    @pytest.mark.negative
     def test_vwologin_negative(self,setup):
         try:  #TODO - 2.Exception Concept
             driver=setup#this will get driver from setup
@@ -33,7 +33,7 @@ class TestVWOLogin:
         except Exception as e:
             print(e)
     @pytest.mark.usefixtures("setup")  # usefixtures->will always try to find the function name in conftest(setup)
-    @pytest.mark.qa
+    @pytest.mark.positive
     def test_vwologin_positive(self, setup):
         driver = setup  # this will get driver from setup
         driver.get(constants.app_url())

@@ -10,8 +10,8 @@ class constants:
     @staticmethod
     def app_url(): #TODO-3.Polymorphism(method overloading)same name with different argument
         return "https://app.vwo.com"
-    def app_url(name):
-        return "https://app.vwo.com"
+    # def app_url(name):
+    #     return "https://app.vwo.com"
 
     @staticmethod
     def take_screenshot(driver, name):
