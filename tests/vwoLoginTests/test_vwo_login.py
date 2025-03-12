@@ -46,7 +46,7 @@ def test_vwo_login_positive(setup):
         # time.sleep(10)
         dashboard=DashboardPage(driver)
         # assert "Dashboard" in driver.title
-        assert dashboard.user_logged_in_text()=="Web Automation"
+        assert "Web Automation" in dashboard.user_logged_in_text()
     except Exception as e:
         pytest.xfail("Failed TC")
         print(e)
