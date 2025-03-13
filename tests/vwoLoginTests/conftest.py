@@ -1,6 +1,6 @@
 from selenium import webdriver
 # from tests.constants.constants import constants
-from selenium.webdriver import Chrome
+from selenium.webdriver import Edge
 import pytest
 
 import os
