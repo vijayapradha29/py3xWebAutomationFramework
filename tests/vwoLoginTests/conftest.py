@@ -10,7 +10,7 @@ load_dotenv()
 @pytest.fixture(scope='class')
 #marking scope='class'->means it will be available to all the classes
 def setup(request):
-    driver=webdriver.Chrome()
+    driver=webdriver.Edge()
     driver.maximize_window()
     username=os.getenv("USERNAME1")
     # print(username)
